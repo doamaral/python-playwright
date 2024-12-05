@@ -68,6 +68,7 @@ pip-selfcheck.json
 
 ### VisualStudioCode ###
 .vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -84,5 +85,7 @@ pip-selfcheck.json
 # Ignore all local history of files
 .history
 .ionide
+
+*.log
 
 # End of https://www.toptal.com/developers/gitignore/api/python,venv,visualstudiocode
