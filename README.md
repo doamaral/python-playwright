@@ -16,7 +16,7 @@
 
 ## Project Setup
 - `python3 -m pip install -r requirements.txt`
-- install browsers: `playwright install`
+- Set up the Playwright WebKit: `playwright install`
 
  ## Project Structure
  - //TODO: Update project structure
