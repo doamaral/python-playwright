@@ -1,16 +1,15 @@
 """Authentication Scenarios"""
-import os
-from dotenv import load_dotenv
+import logging
+from playwright.sync_api import expect
+from utils.logger import logger
+from pages.login import LoginPage
 
-load_dotenv()
+log = logger(logging.INFO)
 
 
-def test_authentication(before_each):
+def test_should_get_authenticated_success(before_each):
     """Test multiple possibilities of input for test authentication scenarios"""
-    page = before_each
-    page.goto(os.getenv("BASE_URL"))
-    username_field = page.locator("username")
-    password_field = page.get_by_role("input", name="password")
-
-    username_field.fill("whatever")
-    password_field.fill("whatever")
+    page, base_url = before_each
+    login_page = LoginPage(page)
+    login_page.do_login('demouser', 'abc123')
+    expect(page).to_have_url(f"{base_url}/account")
