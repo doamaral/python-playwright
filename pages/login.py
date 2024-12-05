@@ -12,6 +12,7 @@ class LoginPage:
         self.password_field = self.page.locator('[name="password"]')
         self.submit_button = self.page.get_by_role(
             'button', name=re.compile("login", re.IGNORECASE))
+        self.error_message = self.page.get_by_role('alert')
 
     def do_login(self, username, password):
         """Method that handles all login process"""
