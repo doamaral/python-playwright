@@ -18,6 +18,15 @@
 - `python3 -m pip install -r requirements.txt`
 - Set up the Playwright WebKit: `playwright install`
 
- ## Project Structure
- - //TODO: Update project structure
+## Project Structure
+- //TODO: Update project structure
+
+## Running tests
+- //TODO: Update run test strategies
+
+## TODO items
+- Finish invoice detail test
+- Add report tool
+- Add Instructions on project structure
+- Add Instructions on how-to run tests
 
