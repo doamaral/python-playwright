@@ -30,3 +30,12 @@
 - Add Instructions on project structure
 - Add Instructions on how-to run tests
 
+ ## Running tests
+- //TODO: Update run test strategies
+
+ ## TODO items
+ - Finish invoice detail test
+ - Add report tool
+ - Add Instructions on project structure
+ - Add Instructions on how-to run tests
+
