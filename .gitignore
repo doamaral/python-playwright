@@ -88,4 +88,7 @@ pip-selfcheck.json
 
 *.log
 
+### Ignore reports
+test_reports/
+
 # End of https://www.toptal.com/developers/gitignore/api/python,venv,visualstudiocode
