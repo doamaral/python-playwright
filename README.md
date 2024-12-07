@@ -14,6 +14,7 @@
         - linux/macos: `source venv/bin/activate`
         - windows: `.\venv\Scripts\activate`
     - Deactivate: `deactivate`
+- [Install Allure Reports binary](https://allurereport.org/docs/install/#install-or-upgrade-allure-report): In order to generate rich HTML reports, install according to your OS
 
 ## Project Setup
 - `python3 -m pip install -r requirements.txt`
@@ -30,17 +31,26 @@
 └── conftest.py: Pytest fixtures
 └── requirements.txt: Lybraries utilized on the project
 └── README.md: File with project's instructions
+└── test_execution.log: Test execution logs file created when running the tests for the first time.
 ```
 
 ## Running tests
-### Running on HEADED mode:
-`python3 -m pytest tests/<test suite to run> --headed`
+The basic command to run tests is:
+```
+python3 -m pytest tests/<test suite to run>
+```
+PS: `pytest-playwright` plugins uses headless mode by default
+for more options, we can add more parameters as it follows:
 
-### Running on HEADLESS mode:
+### Running on HEADED mode:
 `python3 -m pytest tests/<test suite to run> --headed`
 
 ### Adding Allure reports
 add `--alluredir <folder containing report files> --clean-alluredir` to the test command
+
+### Generating reports
+on the terminal, after installing allure:
+`allure serve <folder containing report files>`
 
 ## TODO items
 - Finish invoice detail test
