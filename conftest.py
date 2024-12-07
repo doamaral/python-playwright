@@ -2,16 +2,18 @@
 import os
 import logging
 import pytest
+import allure
 from playwright.sync_api import Page
 from dotenv import load_dotenv
 from pages.login import LoginPage
 from pages.account import AccountPage
 from utils.logger import logger
 
-load_dotenv()
+load_dotenv(override=True)
 log = logger(logging.INFO)
 
 
+@allure.title("Test setup: open browser and open base page.")
 @pytest.fixture
 def before_each(request, page: Page):
     """Actions take place before each test"""
@@ -21,6 +23,7 @@ def before_each(request, page: Page):
     return page, os.getenv("BASE_URL")
 
 
+@allure.title("Test setup: Open browser and log in")
 @pytest.fixture
 def login_before_each(request, page: Page) -> AccountPage:
     """Authentication actions that should take place before tests"""

@@ -1,5 +1,6 @@
 """ Page object for Login page """
 import re
+import allure
 from playwright.sync_api import Page
 
 
@@ -14,6 +15,7 @@ class LoginPage:
             'button', name=re.compile("login", re.IGNORECASE))
         self.error_message = self.page.get_by_role('alert')
 
+    @allure.step("Login with username {username} and password {password}")
     def do_login(self, username, password):
         """Method that handles all login process"""
         self.username_field.fill(username)
