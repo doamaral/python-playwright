@@ -24,13 +24,13 @@
 ```
 .
 ├── pages: Page object modelling of project's pages or components
-    └── components: Folder to containing common components like header's or search bars
-└── tests: Test functions
-└── utils: Utilitary functions to be used on the project
-└── .gitignore: Definitions of non tracked files
-└── conftest.py: Pytest fixtures
-└── requirements.txt: Lybraries utilized on the project
-└── README.md: File with project's instructions
+|    └── components: Folder to containing common components like header's or search bars
+├── tests: Test functions
+├── utils: Utilitary functions to be used on the project
+├── .gitignore: Definitions of non tracked files
+├── conftest.py: Pytest fixtures
+├── requirements.txt: Lybraries utilized on the project
+├── README.md: File with project's instructions
 └── test_execution.log: Test execution logs file created when running the tests for the first time.
 ```
 
