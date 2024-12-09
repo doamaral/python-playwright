@@ -7,6 +7,8 @@
 
 ## Environment Setup
 - Clone this repo and `cd` the folder
+- Rename `.env_sample` file to `.env`
+    - Set the values of environment variables accordingly
 - (optional) Setup virtualenv
     - `python3 -m pip install virtualenv`
     - Set venv: `python3 -m venv venv`
@@ -14,7 +16,7 @@
         - linux/macos: `source venv/bin/activate`
         - windows: `.\venv\Scripts\activate`
     - Deactivate: `deactivate`
-- [Install Allure Reports binary](https://allurereport.org/docs/install/#install-or-upgrade-allure-report): In order to generate rich HTML reports, install according to your OS
+- (optional)[Install Allure Reports binary](https://allurereport.org/docs/install/#install-or-upgrade-allure-report): In order to generate rich HTML reports, install according to your OS
 
 ## Project Setup
 - `python3 -m pip install -r requirements.txt`
