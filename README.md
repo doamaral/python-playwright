@@ -52,6 +52,5 @@ add `--alluredir <folder containing report files> --clean-alluredir` to the test
 on the terminal, after installing allure:
 `allure serve <folder containing report files>`
 
-## TODO items
-- Finish invoice detail test
+![alt text](_img/image.png)
 
