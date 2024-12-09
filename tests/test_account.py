@@ -47,5 +47,5 @@ def test_should_match_given_values_for_invoice(login_before_each, invoice_positi
 
     # billings details
     expect(invoice_detail_page.deposit_now).to_contain_text(deposit_now)
-    # expect(invoice_detail_page.tax_vat).to_contain_text(tax_vat)
-    # expect(invoice_detail_page.total_amount).to_contain_text(total_amount)
+    expect(invoice_detail_page.tax_vat).to_contain_text(tax_vat)
+    expect(invoice_detail_page.total_amount).to_contain_text(total_amount)
