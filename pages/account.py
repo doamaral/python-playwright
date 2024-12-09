@@ -20,5 +20,6 @@ class AccountPage:
         if index < 0 or index >= count:
             raise ValueError(f"position must be between 1 and {
                              count}, got {position}.")
-        self.table_rows.nth(index).click()
-        return InvoiceDetailPage(self.page)
+        with self.page.expect_popup() as invoice_detail:
+            self.table_rows.nth(index).click()
+        return InvoiceDetailPage(invoice_detail.value)
