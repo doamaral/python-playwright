@@ -52,5 +52,5 @@ add `--alluredir <folder containing report files> --clean-alluredir` to the test
 on the terminal, after installing allure:
 `allure serve <folder containing report files>`
 
-![alt text](_img/image.png)
+![Allure report generated](_img/image.png)
 
